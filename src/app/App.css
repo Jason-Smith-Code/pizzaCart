@@ -5,10 +5,59 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+p, h1, h2, h4, a {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.productCategoryContainer {
+    min-height: 90vh;
+    width: 200px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.productListContainer {
+    min-height: 90vh;
+    width: 600px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.cartContainer {
+    min-height: 90vh;
+    width: 200px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.App {
+    background-image: url(pizzaBackground.jpg);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.contentWidth {
+    max-width: 1000px;
+}
+
+.title {
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid black;
 }

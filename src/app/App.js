@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
-import { ProductCategories } from '../features/ProductCategories/productCategories';
-import { Counter } from '../features/counter/Counter';
+import Filters from '../components/Filter/Filters';
 import { Login } from '../features/login/Login';
-import { Cart } from '../features/Cart/Cart';
-import { ProductList } from '../features/ProductList/productList';
+import Cart from '../features/Cart/Cart';
+import Products from '../components/Products/Products';
 import logo from './logo.png';
 
 function App() {
@@ -18,20 +17,18 @@ function App() {
         <div className="main">
           <div className="productCategoryContainer">
             <h2 className="title">Menu</h2>
-            <ProductCategories />
+            <Filters />
           </div>
           <div className="productListContainer">
             <h2 className="title">Product List</h2>
-            <ProductList/>
+            <Products/>
           </div>
           <div className="cartContainer">
             <h2 className="title">Cart</h2>
             <Cart />
           </div>
         </div>
-        <Counter />
       </div>
-      
     </div>
   );
 }

@@ -1,0 +1,35 @@
+.productContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.productImage {
+    border: 1px solid black;
+    height: 150px;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.addToCart {
+    width: 30%;
+    margin-left: 20px;
+}
+
+.productInfo {
+    width: 40%;
+}
+.size {
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.size::after {
+    content: '"';
+}
+
+.Price {
+    font-size: 1.4em;
+    font-weight: 600;
+}

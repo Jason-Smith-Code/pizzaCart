@@ -30,7 +30,6 @@ const Product = ({product}) => {
                     onClick={() => {
                         dispatch(addItemToCart({product, quantity}))
                     }}
-                
                 >Add to Cart</button>
             </div>
         </div>

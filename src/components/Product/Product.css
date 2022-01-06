@@ -12,6 +12,10 @@
 }
 
 .addToCart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     margin-left: 20px;
 }

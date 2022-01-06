@@ -1,0 +1,19 @@
+.productQuantityContainer {
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttonLeft {
+    padding-left: 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+.buttonRight{
+    padding-right: 25px;
+    border-radius: 0 25px 25px 0;
+}
+
+span.Quantity {
+    padding: 10px;
+}

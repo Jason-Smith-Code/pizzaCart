@@ -1,0 +1,12 @@
+.cartSize::after {
+    content: '"';
+}
+
+.cartListContainer {
+    max-height: 95%;
+    overflow-y: scroll;
+}
+
+.cartValue {
+    margin-bottom: 25px
+}

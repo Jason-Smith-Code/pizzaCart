@@ -2,7 +2,6 @@
 // I will export it for use in other components
 // It would be useful to allow an admin user view this and change it, but I haven't covered that at this stage of learning
 
-
 // create a function that returns a number, incrememnting it by one each time it is called
 let productID = 0;
 const incrementID = () => {
@@ -18,6 +17,7 @@ const inventory = [
         subtitle: 'Mozarella Cheese',
         size: '8',
         price: 3.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -26,6 +26,7 @@ const inventory = [
         subtitle: 'Mozarella Cheese',
         size: '10',
         price: 5.1,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -34,6 +35,7 @@ const inventory = [
         subtitle: 'Mozarella Cheese',
         size: '12',
         price: 6.8,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -42,6 +44,7 @@ const inventory = [
         subtitle: 'Mozarella Cheese',
         size: '14',
         price: 9,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -50,6 +53,7 @@ const inventory = [
         subtitle: 'Mushroom',
         size: '8',
         price: 4,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -58,6 +62,7 @@ const inventory = [
         subtitle: 'Mushroom',
         size: '10',
         price: 5.7,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -66,6 +71,7 @@ const inventory = [
         subtitle: 'Mushroom',
         size: '12',
         price: 7.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -74,6 +80,7 @@ const inventory = [
         subtitle: 'Mushroom',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -82,6 +89,7 @@ const inventory = [
         subtitle: 'Pepperoni',
         size: '8',
         price: 4,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -90,6 +98,7 @@ const inventory = [
         subtitle: 'Pepperoni',
         size: '10',
         price: 5.7,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -98,6 +107,7 @@ const inventory = [
         subtitle: 'Pepperoni',
         size: '12',
         price: 7.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -106,6 +116,7 @@ const inventory = [
         subtitle: 'Pepperoni',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -114,6 +125,7 @@ const inventory = [
         subtitle: 'Chicken',
         size: '8',
         price: 4,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -122,6 +134,7 @@ const inventory = [
         subtitle: 'Chicken',
         size: '10',
         price: 5.7,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -130,6 +143,7 @@ const inventory = [
         subtitle: 'Chicken',
         size: '12',
         price: 7.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -138,6 +152,7 @@ const inventory = [
         subtitle: 'Chicken',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -146,6 +161,7 @@ const inventory = [
         subtitle: 'Salami',
         size: '8',
         price: 4,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -154,6 +170,7 @@ const inventory = [
         subtitle: 'Salami',
         size: '10',
         price: 5.7,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -162,6 +179,7 @@ const inventory = [
         subtitle: 'Salami',
         size: '12',
         price: 7.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -170,6 +188,7 @@ const inventory = [
         subtitle: 'Salami',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -178,6 +197,7 @@ const inventory = [
         subtitle: 'Ham',
         size: '8',
         price: 4,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -186,6 +206,7 @@ const inventory = [
         subtitle: 'Ham',
         size: '10',
         price: 5.7,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -194,6 +215,7 @@ const inventory = [
         subtitle: 'Ham',
         size: '12',
         price: 7.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -202,6 +224,7 @@ const inventory = [
         subtitle: 'Ham',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -210,6 +233,7 @@ const inventory = [
         subtitle: 'Prawn',
         size: '8',
         price: 4,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -218,6 +242,7 @@ const inventory = [
         subtitle: 'Prawn',
         size: '10',
         price: 5.7,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -226,6 +251,7 @@ const inventory = [
         subtitle: 'Prawn',
         size: '12',
         price: 7.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -234,6 +260,7 @@ const inventory = [
         subtitle: 'Prawn',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -242,6 +269,7 @@ const inventory = [
         subtitle: 'Ham and Mushroom',
         size: '8',
         price: 4,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -250,6 +278,7 @@ const inventory = [
         subtitle: 'Ham and Mushroom',
         size: '10',
         price: 5.7,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -258,6 +287,7 @@ const inventory = [
         subtitle: 'Ham and Mushroom',
         size: '12',
         price: 7.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -266,6 +296,7 @@ const inventory = [
         subtitle: 'Ham and Mushroom',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -274,6 +305,7 @@ const inventory = [
         subtitle: 'Ham and Pineapple',
         size: '8',
         price: 4,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -282,6 +314,7 @@ const inventory = [
         subtitle: 'Ham and Pineapple',
         size: '10',
         price: 5.7,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -290,6 +323,7 @@ const inventory = [
         subtitle: 'Ham and Pineapple',
         size: '12',
         price: 7.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -298,6 +332,7 @@ const inventory = [
         subtitle: 'Ham and Pineapple',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -306,6 +341,7 @@ const inventory = [
         subtitle: 'Ham and Salami',
         size: '8',
         price: 4,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -314,6 +350,7 @@ const inventory = [
         subtitle: 'Ham and Salami',
         size: '10',
         price: 5.7,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -322,6 +359,7 @@ const inventory = [
         subtitle: 'Ham and Salami',
         size: '12',
         price: 7.5,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -330,6 +368,7 @@ const inventory = [
         subtitle: 'Ham and Salami',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -338,6 +377,7 @@ const inventory = [
         subtitle: 'Bolognese and Onion',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -346,6 +386,7 @@ const inventory = [
         subtitle: 'Bolognese and Onion',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -354,6 +395,7 @@ const inventory = [
         subtitle: 'Bolognese and Onion',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -362,6 +404,7 @@ const inventory = [
         subtitle: 'Bolognese and Onion',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -370,6 +413,7 @@ const inventory = [
         subtitle: 'Mushroom, Chicken and Sweetcorn',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -378,6 +422,7 @@ const inventory = [
         subtitle: 'Mushroom, Chicken and Sweetcorn',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -386,6 +431,7 @@ const inventory = [
         subtitle: 'Mushroom, Chicken and Sweetcorn',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -394,6 +440,7 @@ const inventory = [
         subtitle: 'Mushroom, Chicken and Sweetcorn',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -402,6 +449,7 @@ const inventory = [
         subtitle: 'Mushroom, Onion, Green Peppers and Sweetcorn',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -410,6 +458,7 @@ const inventory = [
         subtitle: 'Mushroom, Onion, Green Peppers and Sweetcorn',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -418,6 +467,7 @@ const inventory = [
         subtitle: 'Mushroom, Onion, Green Peppers and Sweetcorn',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -426,6 +476,7 @@ const inventory = [
         subtitle: 'Mushroom, Onion, Green Peppers and Sweetcorn',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -434,6 +485,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham and Salami',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -442,6 +494,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham and Salami',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -450,6 +503,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham and Salami',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -458,6 +512,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham and Salami',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -466,6 +521,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham and Pineapple',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -474,6 +530,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham and Pineapple',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -482,6 +539,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham and Pineapple',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -490,6 +548,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham and Pineapple',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -498,6 +557,7 @@ const inventory = [
         subtitle: 'Mushroom, Pepperoni and Salami',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -506,6 +566,7 @@ const inventory = [
         subtitle: 'Mushroom, Pepperoni and Salami',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -514,6 +575,7 @@ const inventory = [
         subtitle: 'Mushroom, Pepperoni and Salami',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -522,6 +584,7 @@ const inventory = [
         subtitle: 'Mushroom, Pepperoni and Salami',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -530,6 +593,7 @@ const inventory = [
         subtitle: 'Spicy Beef, Pepperoni, Chilli, Onion and Green Peppers',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -538,6 +602,7 @@ const inventory = [
         subtitle: 'Spicy Beef, Pepperoni, Chilli, Onion and Green Peppers',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -546,6 +611,7 @@ const inventory = [
         subtitle: 'Spicy Beef, Pepperoni, Chilli, Onion and Green Peppers',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -554,6 +620,7 @@ const inventory = [
         subtitle: 'Spicy Beef, Pepperoni, Chilli, Onion and Green Peppers',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -562,6 +629,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham, Salami and Green Peppers',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -570,6 +638,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham, Salami and Green Peppers',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -578,6 +647,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham, Salami and Green Peppers',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -586,6 +656,7 @@ const inventory = [
         subtitle: 'Mushroom, Ham, Salami and Green Peppers',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -594,6 +665,7 @@ const inventory = [
         subtitle: 'Tuna and Onion',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -602,6 +674,7 @@ const inventory = [
         subtitle: 'Tuna and Onion',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -610,6 +683,7 @@ const inventory = [
         subtitle: 'Tuna and Onion',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -618,6 +692,7 @@ const inventory = [
         subtitle: 'Tuna and Onion',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -626,6 +701,7 @@ const inventory = [
         subtitle: 'Tuna, Prawn and Anchovies',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -634,6 +710,7 @@ const inventory = [
         subtitle: 'Tuna, Prawn and Anchovies',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -642,6 +719,7 @@ const inventory = [
         subtitle: 'Tuna, Prawn and Anchovies',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -650,6 +728,7 @@ const inventory = [
         subtitle: 'Tuna, Prawn and Anchovies',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -658,6 +737,7 @@ const inventory = [
         subtitle: 'Spicy Beef, Ham, Salami and Green Peppers',
         size: '8',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -666,6 +746,7 @@ const inventory = [
         subtitle: 'Spicy Beef, Ham, Salami and Green Peppers',
         size: '10',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -674,6 +755,7 @@ const inventory = [
         subtitle: 'Spicy Beef, Ham, Salami and Green Peppers',
         size: '12',
         price: 10,
+        image: 'pizzaDefault'
     },
     {
         id: incrementID(),
@@ -682,6 +764,7 @@ const inventory = [
         subtitle: 'Spicy Beef, Ham, Salami and Green Peppers',
         size: '14',
         price: 10,
+        image: 'pizzaDefault'
     },
 ]
 

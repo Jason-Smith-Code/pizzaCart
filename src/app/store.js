@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice'; // we name our reducer her since the export is default
-import isLoggedReducer from '../features/login/loginSlice'; // we name our reducer her since the export is default
 
-// here i can import all my reducers from my slices, i think need to assign them n the configure store.
+// remember that since these are exported as default, I can give them any name I want as the import
+import isLoggedReducer from '../features/login/loginSlice'; 
+import cartReducer from '../features/Cart/cartSlice';
+import inventoryReducer from '../features/Inventory/inventorySlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
-    login: isLoggedReducer
+    login: isLoggedReducer,
+    cart: cartReducer,
+    inventory: inventoryReducer
   },
 });

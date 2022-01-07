@@ -10,3 +10,14 @@
 .cartValue {
     margin-bottom: 25px
 }
+
+.removeCartItem {
+    position: absolute;
+    top: 0;
+    right:0;
+    
+}
+
+.cartItem {
+    position: relative;
+}

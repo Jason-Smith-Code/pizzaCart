@@ -6,6 +6,9 @@ import Cart from '../features/Cart/Cart';
 import Products from '../components/Products/Products';
 import logo from './logo.png';
 
+
+// I have added a login component, but at this stage I have not learnt how to implement logging in and out, I will leave it here for now and work on it at a later stage
+
 function App() {
   return (
     <div className="App">
@@ -16,11 +19,11 @@ function App() {
         </header>
         <div className="main">
           <div className="productCategoryContainer">
-            <h2 className="title">Menu</h2>
+            <h2 className="title">Categories</h2>
             <Filters />
           </div>
           <div className="productListContainer">
-            <h2 className="title">Product List</h2>
+            <h2 className="title">Pizza Products</h2>
             <Products/>
           </div>
           <div className="cartContainer">

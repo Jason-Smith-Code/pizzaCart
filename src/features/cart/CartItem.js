@@ -10,12 +10,11 @@ const CartItem = ({cartItem}) => {
             <p className="cartSize">{cartItem.quantity} x {cartItem.title} {cartItem.size}</p>
              {/* use toFixed on price to force 2 decimal places */}
             <p className="Price">{cartItem.totalPrice.toFixed(2)}</p>
-        </div>
-        <div className="removeCartItemContainer">
-            <button
+            <button 
+              className="removeCartItem"
               onClick={() => dispatch(removeItemFromCart({cartItemId: cartItem.id}))}
             >
-              Remove Item
+              X
             </button>
         </div>
     </div>

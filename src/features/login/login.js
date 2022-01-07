@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 // We need to import all the reducers and functions here
 import { signIn } from './loginSlice';
-import './Login.css';
 
 // This is essentially a component, here we are going to be returning JSX
 // We need to use useSelector to pull in the data from the store.

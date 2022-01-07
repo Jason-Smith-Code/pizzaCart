@@ -28,6 +28,9 @@ const categories = [
   'Meat Feast'
 ];
 
+// Sort the array alphabetically so users can find their category faster
+categories.sort();
+
 // Return a map of categories, supply 2 props to the Filter
 
 const Filters = () => {

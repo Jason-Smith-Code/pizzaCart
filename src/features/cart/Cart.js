@@ -1,37 +1,19 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import {getCartItems, getTotalCartValue} from './cartSlice';
+import CartItem from './CartItem';
+import './Cart.css';
 
-export function Cart() {
-
-    // write out the array of items here
-    const initalCart = [
-      {
-        category: 'Pizza',
-        title: 'Margarita',
-        subtitle: 'Mozarella Cheese',
-        size: '8"',
-        price: 3.5,
-        key: 1
-      }
-    ];
-
-  let printCart = initalCart.map(function(product){
-    return (
-            <div className="productContainer" key={product.key}>
-                <p>{product.category}</p>
-                <h2>{product.title}</h2>
-                <p>{product.subtitle}</p>
-                <p>{product.size}</p>
-                <p className="price">{product.price}</p>    
-                <button>Remove from Cart</button>
-            </div>
-    );
-  })
+const Cart = () => {
+  const cartValue = useSelector(getTotalCartValue).toFixed(2);
+  const cartItems = useSelector(getCartItems);  
 
   return (
-    <ul className="">
-      {printCart}
+    <ul className="cartListContainer">
+      <h2 className="cartValue">Total: £{cartValue}</h2>
+      {cartItems.map(cartItem => <CartItem cartItem={cartItem} key={cartItem.id}/>)}
     </ul>
   );
 }
 
-    
+export default Cart;

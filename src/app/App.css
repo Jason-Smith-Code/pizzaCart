@@ -1,16 +1,4 @@
-.App-header {
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-p, h1, h2, h4, a {
-    font-family: Arial, Helvetica, sans-serif;
-}
+/* Standard Styling */
 
 * {
     margin: 0;
@@ -18,72 +6,313 @@ p, h1, h2, h4, a {
     box-sizing: border-box;
 }
 
-.main {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
+p, h1, h2, h4, a {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.productCategoryContainer {
-    height: 90vh;
-    width: 20%;
-    border: 1px solid black;
-    padding: 20px;
+.filterButtonActive {
+    background-color: crimson;
 }
 
-.productListContainer {
-    height: 90vh;
-    width: 50%;
-    border: 1px solid black;
-    padding: 20px;
+button {
+    cursor: pointer;
+    transition: 250ms;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
 }
 
-.cartContainer {
-    height: 90vh;
-    width: 30%;
-    border: 1px solid black;
-    padding: 20px;
-}
-
-.App {
-    background-image: url(pizzaBackground.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.contentWidth {
-    width: 1200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.title {
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid black;
+.size::after, .cartSize::after {
+    content: '"';
 }
 
 .Price::before {
     content: '£'
 }
 
-button {
-    cursor: pointer;
-    transition: 250ms;
-    border-radius: 25px;
-    padding: 10px 20px;
-    background-color: black;
-    border: 1px solid white;
-    color: white;
-    text-transform: uppercase;
+span.Quantity {
+    padding: 10px;
 }
 
-button:hover {
-    background-color: rgb(65, 9, 17);
+.buttonLeft {
+    padding-left: 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+.buttonRight{
+    padding-right: 25px;
+    border-radius: 0 25px 25px 0;
+}
+
+@media (min-width: 0px){
+
+    p, a, button {
+        font-size: 16px;
+    }
+
+    .App-header {
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    button {
+        border-radius: 25px;
+        padding: 10px 20px;
+        border: 1px solid white;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .main {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .filterButton {
+        width: 100%;
+        border-radius: 25px;
+        transition: 250ms;
+        font-size: 16px;
+    }
+
+    .addToCart {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .productContainer {
+        display: flex;
+    }
+
+    img.productImage {
+        width: 100px;
+    }
+
+    .productImageContainer {
+        margin-right: 20px;
+    }
+
+    p.Price {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .productQuantityContainer {
+        margin-bottom: 10px;
+    }
+    .productContainer {
+        margin-bottom: 20px;
+        border-bottom: 1px solid black;
+    }
+    .cartItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }  
+}
+
+@media (min-width: 768px){
+
+    .filterButton {
+        width: fit-content;
+    }
+
+    .filterContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img.productImage {
+        width: 150px;
+    }
+
+    .main {
+        margin: 20px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productCategoryContainer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .productListContainer {
+        width: 50%;
+        border-right: 1px solid black;
+        padding-right: 20px;
+    }
+    .cartContainer {
+        width: 50%;
+        padding-left: 20px;
+    }
+    
+}
+
+@media (min-width: 1200px){
+
+    .App-header {
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        margin: 0;
+    }
+    
+    .productCategoryContainer {
+        height: 90vh;
+        width: 20%;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    
+    .productListContainer {
+        height: 90vh;
+        width: 50%;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    
+    .cartContainer {
+        height: 90vh;
+        width: 30%;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    
+    .App {
+        background-image: url(pizzaBackground.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .contentWidth {
+        width: 1200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .title {
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid black;
+    }
+    
+    button {
+        font-size: 14px;
+        border-radius: 25px;
+        padding: 10px 20px;
+        border: 1px solid white;
+    }
+    
+    button:hover {
+        background-color: rgb(65, 9, 17);
+    }
+
+    li.categoryItem {
+        padding: 10px;
+        list-style: none;
+    }
+    .filterContainer {
+        display: block;
+    }
+    
+    .filterButton {
+        width: 100%;
+        border-radius: 25px;
+        transition: 250ms;
+    }
+    
+    .filterButton:hover {
+        background-color: rgb(102, 9, 27);
+    }
+
+    .productContainer {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid black;
+        margin-right: 20px;
+    }
+    
+    .productImageContainer {
+        margin-right: 20px;
+    }
+    
+    .addToCart {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .productInfo {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    .Price {
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+    
+    .cartItemContainer {
+        margin-bottom: 20px;
+        margin-right: 20px;
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+    }
+    
+    .productQuantityContainer {
+        margin-right: 40px;
+    }
+    
+    .cartListContainer {
+        max-height: 90%;
+        overflow-y: scroll;
+    }
+    
+    .cartValue {
+        margin-bottom: 25px
+    }
+
+    .productList {
+        overflow-y: scroll;
+        max-height: 92%;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 1em;
+      }
+       
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+       
+    ::-webkit-scrollbar-thumb {
+        background-color: crimson;
+        border-radius: 10px;
+      }
 }

@@ -1,4 +1,3 @@
-import './QuantityButton.css';
 // I need the quantity button to change its value when the user clicks either button.
 // for this i want to use "useState" from react 
 const QuantityButton = ({quantity, setQuantity}) => {

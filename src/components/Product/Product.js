@@ -1,5 +1,4 @@
 import React, { useState} from 'react'; 
-import './Product.css';
 import QuantityButton from './QuantityButton';
 
 import { useDispatch } from 'react-redux';

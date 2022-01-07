@@ -1,5 +1,4 @@
 import React from 'react';
-import './Filter.css';
 import Filter from './Filter';
 
 // write out the array of categories here
@@ -35,7 +34,7 @@ categories.sort();
 
 const Filters = () => {
     return (
-        <div>
+        <div className="filterContainer">
           {categories.map(category =>
             <Filter 
               category={category}

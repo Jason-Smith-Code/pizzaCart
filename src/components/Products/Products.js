@@ -1,4 +1,3 @@
-import './Products.css';
 import Product from '../Product/Product';
 import inventory from '../../features/Inventory/Inventory';
 import { useSelector } from "react-redux";
